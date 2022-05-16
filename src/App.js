@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.module.scss";
+import image from "./images/img1.jpg";
+import Register from "./Register";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      <div className={styles.App_leftDiv}>
+        <div className={styles.App_leftDiv__selectText}>
+          <p>Select a date Range</p>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            imperdiet bibendum
+          </span>
+        </div>
+      </div>
+      <div className={styles.App_rightDiv}>
+        <Register />
+      </div>
     </div>
   );
 }

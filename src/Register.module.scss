@@ -1,0 +1,91 @@
+@import "variables";
+
+.Register {
+  height: 100%;
+}
+.Register_form {
+  width: 50%;
+  height: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 4rem;
+  & h1 {
+    color: $color-heading;
+    font-size: 20px;
+    font-weight: 750;
+  }
+}
+
+.Register_form__inputDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  & label {
+    margin: 0.4rem 0;
+    color: $color-label;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  & input {
+    padding: 0.6rem;
+    border: 1px solid rgb(212, 208, 208);
+    border-radius: 4px;
+  }
+  & input[name="phone"] {
+    width: 50%;
+  }
+}
+
+.Register_form__checkboxDiv {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+
+  & input[type="checkbox"]:checked ~ .Register_form__customCheckbox {
+    border: 3px solid $color-btn;
+
+    & i {
+      display: block;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+
+  & label {
+    font-size: 0.9em;
+    color: $color-heading;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.Register_form__customCheckbox {
+  width: 15px;
+  height: 15px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+
+  & i {
+    display: none;
+    color: $color-btn;
+    font-size: 13px;
+  }
+}
+
+.Register_form__button {
+  width: 50%;
+  margin-top: 1rem;
+  padding: 0.6rem;
+  background-color: $color-btn;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
