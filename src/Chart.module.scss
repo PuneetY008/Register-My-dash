@@ -1,0 +1,27 @@
+@import "variables";
+
+.Chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & h1 {
+    color: $color-heading;
+  }
+  & span {
+    color: $color-label;
+    font-weight: bold;
+  }
+}
+.Chart_button {
+  margin: 5rem;
+  padding: 0.6rem;
+  background-color: $color-btn;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Chart_button:hover {
+  background-color: $color-btn-hover;
+}

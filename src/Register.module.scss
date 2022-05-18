@@ -6,7 +6,7 @@
 .Register_form {
   width: 50%;
   height: 100%;
-  margin-top: 3rem;
+  margin-top: 0.2rem;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -21,7 +21,7 @@
 .Register_form__inputDiv {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
   & label {
     margin: 0.4rem 0;
     color: $color-label;
@@ -35,6 +35,13 @@
   }
   & input[name="phone"] {
     width: 50%;
+  }
+  & span {
+    margin: 0;
+    padding: 0;
+    color: $color-error;
+    font-size: 0.8em;
+    font-weight: 500;
   }
 }
 
@@ -88,4 +95,9 @@
   color: white;
   border: 1px solid white;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.Register_form__button:hover {
+  background-color: $color-btn-hover;
 }
